@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive HTML cheatsheet with examples and explanations in simple English.">
+  <title>HTML Cheatsheet - ProX Edition</title>
+  <link href="https://cdn.jsdelivr.net/gh/ProgrammerKR/ProXtyle@latest/dist/css/ProXtyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ProgrammerKR/ProXIcons@latest/css/proxicons.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+    section {
+      padding: 60px 20px;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #fff;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #007bff !important;
+    }
+    .px-icon {
+      font-size: 1.4rem;
+      margin-right: 0.5rem;
+      color: #007bff;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .lead {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+    footer {
+      background-color: #0d6efd;
+    }
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">HTML Cheatsheet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+          <li class="nav-item"><a class="nav-link" href="#structure">Structure</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tags">Tags</a></li>
+          <li class="nav-item"><a class="nav-link" href="#attributes">Attributes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tables">Tables</a></li>
+          <li class="nav-item"><a class="nav-link" href="#css">CSS Linking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#js">JS Linking</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4">HTML Cheatsheet - ProX Edition</h1>
+      <p class="lead">Your ultimate guide to HTML with clear explanations and examples in simple English.</p>
+    </div>
+  </header>
+
+  <section id="intro">
+    <div class="container">
+      <h2><i class="px px-info-circle"></i> What is HTML?</h2>
+      <p>HTML (HyperText Markup Language) is the foundation of webpages. It structures content like text, images, and videos for browsers to display.</p>
+    </div>
+  </section>
+
+  <section id="structure">
+    <div class="container">
+      <h2><i class="px px-code"></i> Basic HTML Structure</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <p>Every HTML page starts with this structure. The <code>&lt;!DOCTYPE html&gt;</code> declaration ensures proper rendering.</p>
+    </div>
+  </section>
+
+  <section id="tags">
+    <div class="container">
+      <h2><i class="px px-tag"></i> Common HTML Tags</h2>
+      <ul>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> — Headings</li>
+        <li><code>&lt;p&gt;</code> — Paragraph</li>
+        <li><code>&lt;a&gt;</code> — Link</li>
+        <li><code>&lt;img&gt;</code> — Image</li>
+        <li><code>&lt;br&gt;</code> — Line break</li>
+        <li><code>&lt;hr&gt;</code> — Horizontal line</li>
+        <li><code>&lt;div&gt;</code> — Block container</li>
+        <li><code>&lt;span&gt;</code> — Inline container</li>
+        <li><code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> — Bold and italic</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="attributes">
+    <div class="container">
+      <h2><i class="px px-cog"></i> HTML Attributes</h2>
+      <p>Attributes provide extra information to tags.</p>
+      <ul>
+        <li><code>id</code> — Unique identifier</li>
+        <li><code>class</code> — CSS styling group</li>
+        <li><code>href</code> — Link URL</li>
+        <li><code>src</code> — Media source</li>
+        <li><code>alt</code> — Image description</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="forms">
+    <div class="container">
+      <h2><i class="px px-edit"></i> Forms</h2>
+      <p>Forms collect user input like text, selections, or files.</p>
+      <pre><code>&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="media">
+    <div class="container">
+      <h2><i class="px px-image"></i> Media</h2>
+      <p>Add images, audio, or videos to your page.</p>
+      <pre><code>&lt;img src="image.jpg" alt="Description"&gt;
+&lt;audio controls&gt;&lt;source src="audio.mp3"&gt;&lt;/audio&gt;
+&lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="tables">
+    <div class="container">
+      <h2><i class="px px-table"></i> Tables</h2>
+      <p>Tables organize data in rows and columns.</p>
+      <pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Kanishk&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="semantic">
+    <div class="container">
+      <h2><i class="px px-layout"></i> Semantic Tags</h2>
+      <p>Semantic tags improve structure and accessibility.</p>
+      <ul>
+        <li><code>&lt;header&gt;</code> — Page header</li>
+        <li><code>&lt;nav&gt;</code> — Navigation</li>
+        <li><code>&lt;main&gt;</code> — Main content</li>
+        <li><code>&lt;section&gt;</code> — Content section</li>
+        <li><code>&lt;article&gt;</code> — Independent content</li>
+        <li><code>&lt;aside&gt;</code> — Sidebar</li>
+        <li><code>&lt;footer&gt;</code> — Page footer</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="meta">
+    <div class="container">
+      <h2><i class="px px-info"></i> Meta Tags</h2>
+      <p>Meta tags provide metadata for SEO and responsiveness.</p>
+      <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Page description"&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="links">
+    <div class="container">
+      <h2><i class="px px-link"></i> Links</h2>
+      <p>Links connect pages or resources.</p>
+      <pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="lists">
+    <div class="container">
+      <h2><i class="px px-list"></i> Lists</h2>
+      <p>Create ordered or unordered lists.</p>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;Step 1&lt;/li&gt;
+  &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="iframes">
+    <div class="container">
+      <h2><i class="px px-globe"></i> Iframes</h2>
+      <p>Iframes embed external content.</p>
+      <pre><code>&lt;iframe src="https://example.com" width="100%" height="300"&gt;&lt;/iframe&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="canvas">
+    <div class="container">
+      <h2><i class="px px-paint-brush"></i> Canvas</h2>
+      <p>Canvas is used for drawing graphics with JavaScript.</p>
+      <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="svg">
+    <div class="container">
+      <h2><i class="px px-vector"></i> SVG</h2>
+      <p>SVG creates scalable vector graphics.</p>
+      <pre><code>&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="blue" /&gt;
+&lt;/svg&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="entities">
+    <div class="container">
+      <h2><i class="px px-code"></i> HTML Entities</h2>
+      <p>Entities display special characters.</p>
+      <ul>
+        <li><code>&amp;copy;</code> — ©</li>
+        <li><code>&amp;lt;</code> — &lt;</li>
+        <li><code>&amp;gt;</code> — &gt;</li>
+        <li><code>&amp;amp;</code> — &amp;</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="accessibility">
+    <div class="container">
+      <h2><i class="px px-universal-access"></i> Accessibility</h2>
+      <p>Make your HTML accessible to all users.</p>
+      <ul>
+        <li>Use <code>alt</code> for images.</li>
+        <li>Add <code>aria-label</code> for screen readers.</li>
+        <li>Ensure proper heading hierarchy.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="seo">
+    <div class="container">
+      <h2><i class="px px-search"></i> SEO Basics</h2>
+      <p>Optimize HTML for search engines.</p>
+      <ul>
+        <li>Use descriptive <code>&lt;title&gt;</code>.</li>
+        <li>Add <code>&lt;meta name="description"&gt;</code>.</li>
+        <li>Use semantic tags.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="comments">
+    <div class="container">
+      <h2><i class="px px-comment"></i> Comments</h2>
+      <p>Comments help explain code but don’t display.</p>
+      <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="css">
+    <div class="container">
+      <h2><i class="px px-paint-roller"></i> Linking CSS</h2>
+      <p>Connect CSS to style your HTML.</p>
+      <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="js">
+    <div class="container">
+      <h2><i class="px px-code"></i> Linking JavaScript</h2>
+      <p>Add interactivity with JavaScript.</p>
+      <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="doctype">
+    <div class="container">
+      <h2><i class="px px-file"></i> Doctype</h2>
+      <p>The doctype declaration tells browsers this is HTML5.</p>
+      <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="block-inline">
+    <div class="container">
+      <h2><i class="px px-box"></i> Block vs Inline Elements</h2>
+      <p>Block elements take full width; inline elements sit in line.</p>
+      <ul>
+        <li>Block: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code></li>
+        <li>Inline: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="data-attributes">
+    <div class="container">
+      <h2><i class="px px-database"></i> Data Attributes</h2>
+      <p>Store custom data in HTML.</p>
+      <pre><code>&lt;div data-id="123"&gt;Content&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="global-attributes">
+    <div class="container">
+      <h2><i class="px px-globe"></i> Global Attributes</h2>
+      <p>Attributes usable on any HTML element.</p>
+      <ul>
+        <li><code>id</code> — Unique ID</li>
+        <li><code>class</code> — CSS class</li>
+        <li><code>style</code> — Inline CSS</li>
+        <li><code>title</code> — Tooltip text</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="best-practices">
+    <div class="container">
+      <h2><i class="px px-star"></i> Best Practices</h2>
+      <p>Write clean, maintainable HTML.</p>
+      <ul>
+        <li>Use lowercase tags.</li>
+        <li>Close all tags properly.</li>
+        <li>Validate your HTML.</li>
+        <li>Keep code organized with indentation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">Made with <i class="px px-heart"></i> by <strong>ProXentix</strong>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
